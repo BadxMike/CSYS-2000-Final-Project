@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- 
+    Group 5: 
+    - Kacie Dastrup
+    - Michael Slayton
+    - Arvin Kabey
+    File Name: contact.html
+    Date: 04/22/2024
+-->
+<html lang="en">
+    <head>
+        <title>Contact | AstroExplorers</title>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+    </head>
+
+    <body>
+
+        <!-- Skip to Content Link -->
+        <a class="skip" href="#content">Skip to Content</a>
+
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="learn.html">Learn More</a></li>
+                <li><a href="trivia.html">Trivia</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </div>
+            <a class="nav-icon" onclick="hamburger()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
+
+        <header>
+            <div class="tab-desk">
+                <a href="index.html"><img src="images/astroexplorers.png" alt="Starry Sky"></a>
+            </div>
+            <div class="mobile">
+                <h1>AstroExplorers &#10031;</h1>
+                <h3>Learn About our Solar System!</h3>
+                <hr>
+            </div>
+        </header>
+
+        <!-- Tablet/ Desktop Nav -->
+        <nav class="tab-desk">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="learn.html">Learn More</a></li>
+                <li><a href="trivia.html">Trivia</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main div="content">
+            <div id="contact">
+                <aside>Contact and Location</aside>
+                <h2>Contact us at: </h2>
+                <p>Phone: <a class="contact-link" href="tel:4352223344">(435) 222-3344</a></p>
+                <p>Email: <a class="contact-link" href="mailto:contact@astroexplorers.net">contact@astroexplorers.net</a></p>
+                <h3>See the map below to see where we are located.</h3>
+                <iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.3447781790037!2d-113.12693952367323!3d37.664605618497724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b56246c233a783%3A0xf091da7a3a95747f!2sAshcroft%20Observatory!5e0!3m2!1sen!2sus!4v1713811309831!5m2!1sen!2sus" width="600" height="450" allowfullscreen></iframe>
+            </div>
+            <div id="form">
+                <h2>Fill out the form below and we will contact you!</h2>
+                <form class="form-grid">
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="fName">First Name:</label>
+                        <input type="text" name="fName" id="fName" required>
+
+					    <label for="lName">Last Name:</label>
+					    <input type="text" name="lName" id="lName" required>
+
+					    <label for="email">Email:</label>
+					    <input type="email" name="email" id="email" required>
+
+					    <label for="phone">Phone:</label>
+					    <input type="tel" name="phone" id="phone">
+
+                        <label for="pref">What is your preferred contact?</label>
+                        <select name="pref" id="pref">
+                            <option value="email">Email</option>
+                            <option value="text">Text</option>
+                            <option value="call">Call</option>
+                        </select>
+				    </fieldset>
+                    <fieldset>
+                        <legend>Topic</legend>
+                        <h3>Select a topic you want to ask us about.</h3>
+
+                        <label for="act"><input type="radio" name="info" id="act" value="activities">Activities</label>
+                        
+                        <label for="vol"><input type="radio" name="info" id="vol" value="volunteering">Volunteering</label>
+
+                        <label for="astro"><input type="radio" name="info" id="astro" value="astronomy facts">Astronomy Facts</label>
+
+                        <p>Rental Equipment:</p>
+                        <label for="rent">Choose what you are interested in renting:</label>
+                        <select name="rent" id="rent">
+                            <optgroup label="Telescope">
+                                <option value="one">One</option>
+                                <option value="two">Two</option>
+                            </optgroup>
+                            <optgroup label="Books">
+                                <option value="stars">Stars</option>
+                                <option value="planets">Planets</option>
+                            </optgroup>
+                        </select>
+
+                        <label for="questions">What questions do you have for us?</label>
+                        <textarea name="questions" id="questions" rows="5" cols="35"></textarea>
+                    </fieldset>
+
+                    <input type="submit" id="submit" value="Submit" class="btn">
+                    <input type="reset" id="reset" value="Reset" class="btn">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="copyright">
+                <p>&copy; Copyright 2024. All Rights Reserved.</p>
+                <p><a href="mailto:contact@astroexplorers.net">contact@astroexplorers.net</a></p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com" target="blank"><img src="images/Facebook_Logo_Secondary.png" alt="White Facebook Logo"></a>
+                <a href="https://www.instagram.com" target="blank"><img src="images/Instagram_Glyph_White.png" alt="White Instagram Logo"></a>
+            </div>
+        </footer>
+
+        <!-- Script Link -->
+        <script src="scripts/script.js"></script>
+
+    </body>
+</html>
