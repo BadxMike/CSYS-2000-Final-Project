@@ -4,7 +4,7 @@
     - Michael Slayton
     - Arvin Kabey
     File Name: styles.css
-    Date: 04/10/2024
+    Date: 04/24/2024
 */
 
 /* CSS Reset */
@@ -187,6 +187,67 @@ button:hover {
     background-color: #2e1cb7;
 }
 
+/* Style rules for rental information */
+#rentals .equipment-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#rentals .equipment-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    width: 180px;
+    cursor: pointer;
+    position: relative;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+#rentals .equipment-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+#rentals .hover-info {
+    display: none;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.9);
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+}
+
+#rentals .equipment-item:hover .hover-info {
+    display: block;
+}
+
+#rentals {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+#rentals ul li {
+    animation: flash 1s infinite;
+}
+
+.offer {
+    padding: 0.5%;
+    font-size: 1.15em;
+}
 
 /* Style rules for contact and location */
 #contact {
