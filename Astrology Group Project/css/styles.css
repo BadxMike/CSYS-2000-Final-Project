@@ -53,13 +53,13 @@ img {
 }
 
 /* Style rules for header area */
-.mobile h1, .mobile h3 {
+.mobile-tablet h1, .mobile-tablet h3 {
     padding: 2%;
     text-align: center;
     font-family: "Exo 2", sans-serif, serif;
 }
 
-.mobile h1 {
+.mobile-tablet h1 {
     font-optical-sizing: auto;
     font-weight: bold;
 }
@@ -72,7 +72,7 @@ nav {
     background-color: #1e1657;
 }
 
-.mobile-nav a{
+.mobile-tab-nav a{
     color: #fff;
     text-align: center;
     font-size: 2em;
@@ -81,7 +81,7 @@ nav {
     display: block;
 }
 
-.mobile-nav a.nav-icon {
+.mobile-tab-nav a.nav-icon {
     display: block;
     position: absolute;
     left: 0;
@@ -151,10 +151,20 @@ section {
     background: linear-gradient(#fff, #d3bbf7);
     border-radius: 5px;
     box-shadow: 6px 6px 10px #8370ff;
+    text-align: center;
 }
 
 #quiz h1 {
     font-size: 2.5em;
+}
+
+.astro-quiz h3 {
+    text-align: center;
+    padding: 2%;
+}
+
+.astro-quiz {
+    text-align: center;
 }
 
 #question {
@@ -185,6 +195,23 @@ button:hover {
 
 .selected {
     background-color: #2e1cb7;
+}
+
+/* Style rules for planet facts */
+#facts h1 {
+    background-color: #8370ff;
+    text-align: center;
+    font-size: 3em;
+    color: #fff;
+}
+
+#facts ul {
+    padding-left: 4%;
+}
+
+#facts li {
+    list-style-type: none;
+    padding-bottom: 1.5%;
 }
 
 /* Style rules for rental information */
@@ -247,6 +274,10 @@ button:hover {
 .offer {
     padding: 0.5%;
     font-size: 1.15em;
+}
+
+.offer li {
+    margin-left: 15px;
 }
 
 /* Style rules for contact and location */
@@ -350,28 +381,8 @@ footer a {
         display: block;
     }
 
-    .mobile, .mobile-nav {
+    .mobile, .desktop, #nav-link {
         display: none;
-    }
-    
-    /* Tablet Viewport: Style rules for nav area */
-    nav ul {
-        list-style-type: none;
-        text-align: center;
-    }
-
-    nav li {
-        border-top: none;
-        display: inline-block;
-        font-size: 1.3em;;
-        font-weight: bold;
-    }
-    
-    nav li a {
-        padding: 0.5em;
-        display: block;
-        color: #fff;
-        text-decoration: none;
     }
 
     /* Tablet Viewport: Style rules for main area */
@@ -425,10 +436,30 @@ footer a {
         display: block;
     }
 
-    .mobile-tablet {
+    .mobile-tablet, .mobile-tab-nav {
         display: none;
     }
     
+    /* Tablet Viewport: Style rules for nav area */
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        border-top: none;
+        display: inline-block;
+        font-size: 1.3em;;
+        font-weight: bold;
+    }
+    
+    nav li a {
+        padding: 0.5em;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+
     /* Desktop Viewport: Style rules for nav area */
     nav li {
         font-size: 1.5em;
