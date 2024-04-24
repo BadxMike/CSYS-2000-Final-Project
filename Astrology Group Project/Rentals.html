@@ -4,170 +4,124 @@
     - Kacie Dastrup
     - Michael Slayton
     - Arvin Kabey
-    File Name: rentals.html
-    Date: 04/24/2024
+    File Name: contact.html
+    Date: 04/22/2024
 -->
 
-    <html lang="en">
-        <head>
-            <title>Template | AstroExplorers</title>
-            <meta charset="utf-8">
-            <meta name="description" content="">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="css/styles.css">
-            <link href="https://fonts.googleapis.com/css2?family=Anton&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-            <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-            <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-            <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-            <link rel="icon" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
-            <style>
-                #rentals .equipment-list {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: space-around;
-                    margin-bottom: 20px;
-                }
-        
-                #rentals .equipment-item {
-                    border: 1px solid #ddd;
-                    padding: 10px;
-                    margin: 5px;
-                    text-align: center;
-                    width: 180px;
-                    cursor: pointer;
-                    position: relative;
-                    background-color: #f9f9f9;
-                    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-                    transition: all 0.3s ease;
-                }
-        
-                #rentals .equipment-item p {
-                    margin: 0;
-                    font-size: 16px;
-                }
-        
-                #rentals .hover-info {
-                    display: none;
-                    position: absolute;
-                    width: 100%;
-                    bottom: 0;
-                    left: 0;
-                    background-color: rgba(255,255,255,0.9);
-                    padding: 5px;
-                    text-align: center;
-                    font-weight: bold;
-                    border-top: 1px solid #ddd;
-                }
-        
-                #rentals .equipment-item:hover .hover-info {
-                    display: block;
-                }
-        
-                #rentals {
-                    margin: 20px;
-                    font-family: Arial, sans-serif;
-                }
-        
-                @keyframes flash {
-                    0%, 100% { opacity: 1; }
-                    50% { opacity: 0; }
-                }
-        
-                #rentals ul li {
-                    animation: flash 1s infinite;
-                }
-            </style>
-        </head>
-<body>
-    <!-- Skip to Content Link -->
-    <a class="skip" href="#content">Skip to Content</a>
+<html lang="en">
+    <head>
+        <title>Rentals | AstroExplorers</title>
+        <meta charset="utf-8">
+        <meta name="description" content="See our rental information for telescopes, the observatory, and more!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+    </head>
 
-    <!-- Mobile Nav -->
-    <nav class="mobile-nav">
-        <div id="nav-links">
-            <a href="index.html">Home</a>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="learn.html">Learn More</a></li>
-            <li><a href="trivia.html">Trivia</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </div>
-        <a class="nav-icon" onclick="hamburger()">
-        <div id="icon">&#9776;</div>
-        </a>
-    </nav>
+    <body>
+        <!-- Skip to Content Link -->
+        <a class="skip" href="#content">Skip to Content</a>
 
-    <header>
-        <div class="tab-desk">
-            <a href="index.html"><img src="images/astroexplorers.png" alt="Starry Sky"></a>
-        </div>
-        <div class="mobile">
-            <h1>AstroExplorers &#10031;</h1>
-            <h3>Learn About our Solar System!</h3>
-            <hr>
-        </div>
-    </header>
+        <!-- Mobile Nav -->
+        <nav class="mobile-tab-nav">
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="learn.html">Learn More</a></li>
+                <li><a href="trivia.html">Trivia</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </div>
+            <a class="nav-icon" onclick="hamburger()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
 
-    <!-- Tablet/ Desktop Nav -->
-    <nav class="tab-desk">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="learn.html">Learn More</a></li>
-            <li><a href="trivia.html">Trivia</a></li>
-            <li><a href="rentals.html">Rentals</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </nav>
-    <main div="content">
-        <div>   
-            <section id="rentals">
-                <h2>Explore the Skies with Our Rental Services</h2>
-                <h3>Available Equipment</h3>
-                <div class="equipment-list">
-                    <div class="equipment-item">
-                        <p>3 inch Refractor Telescope</p>
-                        <span class="hover-info">$10/hr</span>
+        <header>
+            <div class="desktop">
+                <a href="index.html"><img src="images/astroexplorers.png" alt="Starry Sky"></a>
+            </div>
+            <div class="mobile-tablet">
+                <h1>AstroExplorers &#10031;</h1>
+                <h3>Learn About our Solar System!</h3>
+                <hr>
+            </div>
+        </header>
+
+        <!-- Tablet/ Desktop Nav -->
+        <nav class="desktop">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="learn.html">Learn More</a></li>
+                <li><a href="trivia.html">Trivia</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <main div="content">
+            <div>   
+                <section id="rentals">
+                    <h2>Explore the Skies with Our Rental Services</h2>
+                    <h3>Available Equipment</h3>
+                    <div class="equipment-list">
+                        <div class="equipment-item">
+                            <p>3 inch Refractor Telescope</p>
+                            <span class="hover-info">$10/hr</span>
+                        </div>
+                        <div class="equipment-item">
+                            <p>6 inch Cassegrain Telescope</p>
+                            <span class="hover-info">$30/hr</span>
+                        </div>
+                        <div class="equipment-item">
+                            <p>10 inch Reflector Telescope</p>
+                            <span class="hover-info">$40/hr</span>
+                        </div>
+                        <div class="equipment-item">
+                            <p>Star Charts</p>
+                            <span class="hover-info">$15/hr</span>
+                        </div>
+                        <div class="equipment-item">
+                            <p>Laser Pointers</p>
+                            <span class="hover-info">$5/hr</span>
+                        </div>
                     </div>
-                    <div class="equipment-item">
-                        <p>6 inch Cassegrain Telescope</p>
-                        <span class="hover-info">$30/hr</span>
-                    </div>
-                    <div class="equipment-item">
-                        <p>10 inch Reflector Telescope</p>
-                        <span class="hover-info">$40/hr</span>
-                    </div>
-                    <div class="equipment-item">
-                        <p>Star Charts</p>
-                        <span class="hover-info">$15/hr</span>
-                    </div>
-                    <div class="equipment-item">
-                        <p>Laser Pointers</p>
-                        <span class="hover-info">$5/hr</span>
-                    </div>
-                </div>
-                <h3>Observatory Rental</h3>
-                <p>Rent the Observatory: Book our observatory by the hour for your personal or group skywatching experience. Only $80/hr.</p>
-                <h3>Subscription Service</h3>
-                <p>Monthly Subscription: For only $35 per month, enjoy:</p>
-                <ul>
-                    <li>1 hour of observatory time</li>
-                    <li>4 telescope rentals per month</li>
-                    <li>1 hour per month of guidance and assistance from an experienced astronomer</li>
-                </ul>
-            </section>
-            <h4>Please visit the <a href="Astrology Group Project\contact.html" target="_blank">contact us</a> page for rental inquiries.</h4>
-        </div>
-    </main>
-    <footer>
-        <div class="copyright">
-            <p>&copy; Copyright 2024. All Rights Reserved.</p>
-            <p><a href="mailto:contact@astroexplorers.net">contact@astroexplorers.net</a></p>
-        </div>
-        <div class="social">
-            <a href="https://www.facebook.com" target="blank"><img src="images/Facebook_Logo_Secondary.png" alt="White Facebook Logo"></a>
-            <a href="https://www.instagram.com" target="blank"><img src="images/Instagram_Glyph_White.png" alt="White Instagram Logo"></a>
-        </div>
-    </footer>
-</body>
+
+                    <h3>Observatory Rental</h3>
+                    <p>Rent the Observatory: Book our observatory by the hour for your personal or group skywatching experience. Only $80/hr.</p>
+                    <h3>Subscription Service</h3>
+                    <p>Monthly Subscription: For only $35 per month, enjoy:</p>
+                    <ul>
+                        <li>1 hour of observatory time</li>
+                        <li>4 telescope rentals per month</li>
+                        <li>1 hour per month of guidance and assistance from an experienced astronomer</li>
+                    </ul>
+                </section>
+
+                <h4>Please visit the <a href="Astrology Group Project\contact.html" target="_blank">contact us</a> page for rental inquiries.</h4>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="copyright">
+                <p>&copy; Copyright 2024. All Rights Reserved.</p>
+                <p><a href="mailto:contact@astroexplorers.net">contact@astroexplorers.net</a></p>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com" target="blank"><img src="images/Facebook_Logo_Secondary.png" alt="White Facebook Logo"></a>
+                <a href="https://www.instagram.com" target="blank"><img src="images/Instagram_Glyph_White.png" alt="White Instagram Logo"></a>
+            </div>
+        </footer>
+
+        <!-- Script Link -->
+        <script src="scripts/script.js"></script>
+
+    </body>
+
 </html>
